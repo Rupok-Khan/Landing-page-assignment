@@ -1,0 +1,264 @@
+/* .main-card{
+    background-image: url(../photos/Container.png);
+    background-repeat: no-repeat;
+    height: 490px;
+    position: relative;
+}
+.main-card-body{
+    position: absolute;
+    bottom: 0;
+    color: white;
+
+}
+#card-1{
+    background-image: url(../photos/Container-1.png);
+    color: white;
+}
+#card-2{
+    background-image: url(../photos/Container\ \(2\).png);
+    color: white;
+}
+#card-3{
+    background-image: url(../photos/Container\ \(3\).png);
+    color: white;
+}
+
+
+.recent-main-card{
+    background-image: url(../photos/recent-main\ card.png);
+    height: 520px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10px;
+}
+.recent-main-card-body{
+    position: absolute;
+    bottom: 0;
+    color: white;
+
+}
+
+.facebook{
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 130px;
+    margin-bottom:10px ;
+    cursor: pointer;
+}
+.instragram{
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 130px;
+    cursor: pointer;
+}
+.linkdin{
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 130px;
+    cursor: pointer;
+}
+.twitter{
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 130px;
+    cursor: pointer;
+}
+.youtube{
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 130px;
+    cursor: pointer;
+}
+.printer{
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 130px;
+    cursor: pointer;
+}
+.daily-newsletter{
+    background-color: #183354;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width:95%;
+}
+#email{
+    background-color: rgb(248, 248, 248);
+    border: none;
+    padding: 5px;
+
+}
+
+.card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+#popular-card{
+    max-width: 540px;
+    border: none;
+}
+#popular-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+#recent-card{
+    max-width: 540px;
+    border: none;
+}
+#recent-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+} */
+
+
+
+
+
+
+/* Background and layout for main card */
+.main-card{
+    background-image: url(../photos/Container.png);
+    background-repeat: no-repeat;
+    height: 490px;
+    position: relative;
+    background-size: cover; /* Ensure background images scale well */
+}
+.main-card-body{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 15px; /* Added padding for text spacing */
+}
+
+/* Card styles */
+#card-1{
+    color: white;
+    background-size: cover; /* Ensure background images scale well */
+    background-position: center;
+    background-image: url(../photos/Container-1.png);
+}
+
+#card-2{
+    color: white;
+    background-size: cover; /* Ensure background images scale well */
+    background-position: center;
+    background-image: url(../photos/Container\ \(2\).png);
+}
+#card-3{
+    color: white;
+    background-size: cover; /* Ensure background images scale well */
+    background-position: center;
+    background-image: url(../photos/Container\ \(3\).png);
+}
+.recent-main-card{
+    background-image: url(../photos/recent-main\ card.png);
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.recent-main-card-body{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 15px; /* Added padding for text spacing */
+}
+
+/* Social media button styling */
+.facebook, .instragram, .linkdin, .twitter, .youtube, .printer{
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    max-width: 130px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Added border radius for rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.facebook:hover, .instragram:hover, .linkdin:hover, .twitter:hover, .youtube:hover, .printer:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
+
+/* Newsletter section */
+.daily-newsletter{
+    background-color: #183354;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto; /* Center align the newsletter section */
+    text-align: center;
+}
+
+#email{
+    background-color: rgb(248, 248, 248);
+    border: none;
+    padding: 10px;
+    width: 80%; /* Make input field more responsive */
+    margin-bottom: 10px; /* Space between input and button */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Card hover effect */
+.card:hover, #popular-card:hover, #recent-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Card image styling */
+#popular-card, #recent-card {
+    max-width: 540px;
+    border: none;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Added rounded corners to images */
+}
+
+/* Make popular and recent cards responsive */
+@media (max-width: 768px) {
+    /* Stack columns vertically for smaller screens */
+    .col-lg-4, .col-lg-8 {
+        width: 100%;
+    }
+
+    .daily-newsletter {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #email {
+        width: 90%;
+    }
+
+    .facebook, .instragram, .linkdin, .twitter, .youtube, .printer {
+        max-width: 100%;
+    }
+}
+
+/* Adjust font sizes for mobile screens */
+@media (max-width: 576px) {
+    .main-card-body h3 {
+        font-size: 1.5rem; /* Smaller text size for mobile */
+    }
+
+    .main-card-body p, .card-body p {
+        font-size: 0.875rem; /* Adjust text size for better readability */
+    }
+
+    .card-body {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+}
